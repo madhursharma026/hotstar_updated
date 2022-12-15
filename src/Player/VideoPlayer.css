@@ -1,0 +1,9 @@
+@media (max-width: 768px) {
+    .player_series_title{
+        display: none;
+    }
+    .player_series_description{
+        display: none;
+    }
+}
+

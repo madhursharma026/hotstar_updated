@@ -1,0 +1,35 @@
+@media (max-width: 1600px) {
+    .carousel_item_8 {
+        display: none;
+    }
+}
+
+@media (max-width: 1400px) {
+    .carousel_item_7 {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    .carousel_item_6 {
+        display: none;
+    }
+}
+
+@media (max-width: 1000px) {
+    .carousel_item_5 {
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+    .carousel_item_4 {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .carousel_item_3 {
+        display: none;
+    }
+}

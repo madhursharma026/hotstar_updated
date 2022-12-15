@@ -1,0 +1,9 @@
+.margin_top_for_body_after_header {
+    margin-top: 65px;
+    overflow: hidden;
+}
+
+*{
+    font-family: sans-serif;
+}
+
