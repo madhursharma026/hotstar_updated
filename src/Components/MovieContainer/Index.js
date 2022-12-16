@@ -18,11 +18,11 @@ const MovieContainer = (all_item_details) => {
   return (
     <div
       id={`${all_item_details?.name}`.replace(/\s+/g, "")}
-      className="carousel slide mx-3"
+      className="carousel slide mx-md-3"
       data-bs-interval="false"
     >
       <div className="carousel-inner">
-        <h4 className="pt-3 px-4">
+        <h4 className="pt-3 px-md-4">
           <b>
             <Link
               to={`/single_category/${all_item_details?.id}`}
@@ -33,7 +33,7 @@ const MovieContainer = (all_item_details) => {
           </b>
         </h4>
         <div className="carousel-item zoom_on_hover active">
-          <div className="row px-4">
+          <div className="row px-md-4">
             {all_item_details?.movies?.records
               ?.slice(0, countOfBlock)
               .map((Category_all_item_details, i) => (
@@ -48,7 +48,7 @@ const MovieContainer = (all_item_details) => {
         </div>
         {all_item_details?.movies?.records.length >= 1 && (
           <div className="carousel-item zoom_on_hover">
-            <div className="row px-4">
+            <div className="row px-md-4">
               {all_item_details?.movies?.records
                 ?.slice(countOfBlock, countOfBlock * 2)
                 .map((Category_all_item_details, i) => (
@@ -64,7 +64,7 @@ const MovieContainer = (all_item_details) => {
         )}
         {all_item_details?.movies?.records.length >= countOfBlock * 3 && (
           <div className="carousel-item zoom_on_hover">
-            <div className="row px-4">
+            <div className="row px-md-4">
               {all_item_details?.movies?.records
                 ?.slice(countOfBlock * 2, countOfBlock * 3)
                 .map((Category_all_item_details, i) => (
@@ -80,7 +80,7 @@ const MovieContainer = (all_item_details) => {
         )}
         {all_item_details?.movies?.records.length >= countOfBlock * 4 && (
           <div className="carousel-item zoom_on_hover">
-            <div className="row px-4">
+            <div className="row px-md-4">
               {all_item_details?.movies?.records
                 ?.slice(countOfBlock * 3, countOfBlock * 4)
                 .map((Category_all_item_details, i) => (

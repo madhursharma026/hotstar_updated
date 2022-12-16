@@ -46,13 +46,13 @@ function SearchResult() {
   return (
     <div>
       <div className="SearchResult pt-4 mb-5">
-        {searchWord && (<h5 className="text-light px-5">Showing all results for{" "} <span style={{ textTransform: "capitalize" }}>{searchWord}</span></h5>)}
-        <div className="container-fluid px-5">
+        {searchWord && (<h5 className="text-light px-3 px-md-5">Showing all results for{" "} <span style={{ textTransform: "capitalize" }}>{searchWord}</span></h5>)}
+        <div className="container-fluid px-md-5">
           {searchData?.length != 0 && !loading && called ? (
             <Box className={"zoom_on_hover"} sx={{ display: "flex", flexWrap: "wrap", height: "100%", gap: "20px", mt: "30px", mb: "35px", justifyContent: "space-left" }}>
               {searchData?.map((element) => (
-                <MovieBlock
-                  {...{ ...element, style: { display: "block", maxWidth: "180px", minWidth: "180px", width: "190px" } }} />
+                <MovieBlock className="searchImageThumbnail"
+                  {...{ ...element, style: { display: "block" } }} />
               ))}
             </Box>
           ) : called ? (

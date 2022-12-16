@@ -21,3 +21,15 @@
   border-color: #1f80e0;
 }
 
+
+
+
+@media (max-width: 550px) {
+  .search-box {
+    width: 180px;
+  }
+
+  .search-box:focus {
+    width: 200px;
+  }
+}

@@ -16,7 +16,7 @@ function Player(props) {
                         <div style={{ height: "275px", width: "206px" }}>
                             <Link to={`/player/${PlayerData?.id}`}>
                                 <div className="player_video_thumbnail">
-                                    <img className="d-block" src={PlayerData?.cover} alt="#" style={{ height: "275px", width: "206px", borderRadius: "10px" }} />
+                                    <img className="d-block playerImageThumbnail" src={PlayerData?.cover} alt="#" style={{ borderRadius: "10px" }} />
                                     <div className='w-100 px-2 player_video_description'>
                                         <h6>{PlayerData?.title}</h6>
                                         <p style={{ fontSize: "10px", marginTop: "-5px" }}>{PlayerData?.relesed} * {PlayerData?.description}</p>

@@ -4,6 +4,20 @@
   width: 100%;
 }
 
+.singleCategoryImageThumbnail{
+  width: 195px;
+  min-width: 195px;
+  max-width: 195px;
+}
+
+@media (max-width: 550px) {
+  .singleCategoryImageThumbnail{
+    width: 175px;
+    min-width: 175px;
+    max-width: 175px;
+  }
+}
+
 .hover_effect_on_hover .Similar_category_video_thumbnail_hover_effect:focus,
 .hover_effect_on_hover .Similar_category_video_thumbnail_hover_effect:hover {
   transform: scale(1.17);

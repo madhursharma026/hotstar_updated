@@ -316,7 +316,7 @@ function TrailersPlayer(props) {
               </div>
             </div>
           </div>
-          <Footer />
+          {/* <Footer /> */}
         </>
         :
         <>
@@ -324,7 +324,7 @@ function TrailersPlayer(props) {
             <div className="px-5">
               <LoadingDataForSingleVideoPage />
             </div>
-            <Footer />
+            {/* <Footer /> */}
           </div>
         </>
       }

@@ -78,6 +78,20 @@
     display: none;
   }
 }
+.searchImageThumbnail{
+  width: 190px;
+  min-width: 190px;
+  max-width: 190px;
+  height: 275px;
+}
+@media (max-width: 550px) {
+  .searchImageThumbnail{
+    width: 150px;
+    min-width: 150px;
+    max-width: 150px;
+    height: 150px;
+  }
+}
 
 
 

@@ -11,7 +11,7 @@ function Trailers(props) {
                 <div style={{ height: "275px", width: "206px" }}>
                     <Link to={`/trailer_player/${TrailersData?.id}`}>
                         <div className="trailers_video_thumbnail">
-                            <img className="d-block" src={TrailersData?.cover} alt="#" style={{ height: "275px", width: "206px", borderRadius: "10px" }} />
+                            <img className="d-block trailerImageThumbnail img-fluid" src={TrailersData?.cover} alt="#" style={{ borderRadius: "10px" }} />
                             <div className='w-100 px-2 trailers_video_description'>
                                 <h6>{TrailersData.title}</h6>
                                 <h6 style={{ color: "white", fontSize: "10px" }}><i className="fa fa-play"></i> WATCH MOVIE</h6><br />

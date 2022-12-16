@@ -2,6 +2,12 @@
     background: #0C111B;
 }
 
+.imageThumbnail{
+    height: 275px;
+    min-height: 275px;
+    max-height: 275px;
+}
+
 .carousel_item {
     border-radius: 10px;
     object-fit: cover;
@@ -51,6 +57,12 @@
     .zoom_on_hover .video_thumbnail:hover {
         transform: 0;
         z-index: 1;
+    }
+
+    .imageThumbnail{
+        height: 150px;
+        min-height: 150px;
+        max-height: 150px;
     }
 }
 

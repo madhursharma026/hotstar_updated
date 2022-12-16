@@ -80,13 +80,13 @@ function SingleCategoryVideo(props) {
                     <MovieBlock {...AllItemOfSingleCategory} key={AllItemOfSingleCategory.id} style={{ minWidth: "15.7vw", maxWidth: "15.7vw", display: "block" }} />
                   ))}
                 </div> */}
-              <div className={"row zoom_on_hover px-5"} sx={{ display: "flex", flexWrap: "wrap", height: "100%", gap: "20px", mt: "30px", mb: "35px", justifyContent: "space-left" }}>
+              <div className={"row zoom_on_hover px-3 px-md-5"} sx={{ display: "flex", flexWrap: "wrap", height: "100%", gap: "20px", mt: "30px", mb: "35px", justifyContent: "space-left" }}>
                 <h5 className="text-light" style={{ fontSize: "24px" }}>
                   Popular Shows
                 </h5>
                 {AllItemOfSingleCategory?.map((element) => (
-                  <MovieBlock
-                    {...{ ...element, style: { display: "block", maxWidth: "195px", minWidth: "195px", width: "195px" } }} />
+                  <MovieBlock className="singleCategoryImageThumbnail"
+                    {...{ ...element, style: { display: "block" } }} />
                 ))}
               </div>
             </InfiniteScroll>

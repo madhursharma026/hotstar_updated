@@ -10,7 +10,7 @@ export const MovieBlock = (props) => {
     <div className={`pb-4 ${className} col`} style={style} key={id}>
       <Link to={`/player/${id}`}>
         <div className="video_thumbnail w-100" style={{ backgroundColor: "#0C111B", borderRadius: "10px" }}>
-          <LazyLoadImage className="d-block img-fluid" src={cover} alt="#" width="100%" height="275px" loading={"lazy"} effect={"blur"} style={{ minHeight: "275px", maxHeight: "275px", width: "100%", borderRadius: "10px", objectFit: "cover", backgroundColor: "#0C111B", }} />
+          <LazyLoadImage className="d-block img-fluid imageThumbnail" src={cover} alt="#" width="100%" loading={"lazy"} effect={"blur"} style={{ width: "100%", borderRadius: "10px", objectFit: "cover", backgroundColor: "#0C111B", }} />
           <div className="w-100 px-2 video_description">
             <h6>{title}</h6>
             <p style={{ fontSize: "10px", marginTop: "-5px", maxHeight: "58px", height: "58px !important", overflow: "hidden" }}>
